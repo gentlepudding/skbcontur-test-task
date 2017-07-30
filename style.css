@@ -5,12 +5,17 @@ body {
     padding: 0;
 }
 
-.search-field {
+.search-form {
     margin: 10px;
     line-height: 20px;
 }
 
-.search-form {
+.search-form__field {
+    display: inline-block;
+    position: relative;
+}
+
+.search-form__input {
     width: 290px;
     height: 30px;
     display: inline-block;
@@ -24,50 +29,35 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
-.search-form__name {
+.search-form__label {
     display: inline-block;
     margin-right: 30px;
 }
 
-.search-form:hover {
+.search-form__input:hover {
      border-color:  rgba(0,0,0,0.3) rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.1);
 }
 
-.search-form:focus {
+.search-form__input:focus {
     outline: none;
     border: 1px solid #5199db;
 }
 
-.search-form:valid {
-    border: rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.1) rgba(0,0,0,0.1);
-}
-
-.search-form:invalid {
-    outline: none;
-    border: 2px solid #da0c09;
-}
-
-.search-form:disabled {
-    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.1);
-    background-color: #f1f1f1;
-}
-
-.search-form:focus::-webkit-input-placeholder {
+.search-form__input:focus::-webkit-input-placeholder {
        color: rgba(64, 64, 64, 0.5);
 }
 
-/*:focus::-webkit-input-placeholder {color: rgba(64, 64, 64, 0.5)}
-:focus::-moz-placeholder          {color: rgba(64, 64, 64, 0.5)}
-:focus:-moz-placeholder           {color: rgba(64, 64, 64, 0.5)}
-:focus:-ms-input-placeholder      {color: rgba(64, 64, 64, 0.5)}*/
-
-.cities {
+.search-form__popup {
     position: absolute;
     height: 300px;
     width: 350px;
-    margin: 10px;
-    top: 29px;
-    left: 69px;
+    margin: 0;
+    top: 45px;
+    left: 0;
+}
+
+.search-form__popup_hidden {
+    display: none;
 }
 
 .cities-list {
@@ -82,17 +72,14 @@ body {
     border-color: rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.2);
     border-image: none;
     box-shadow: 0px 1px 15px 0 rgba(0,0,0,0.2);
+    margin: 0;
 }
 
-.cities-list__string {
+.cities-list__city {
      padding: 3px 5px;
 }
 
-.cities-list__string:hover {
+.cities-list__city:hover {
     color: #fff;
     background-color: #5199db;
-}
-
-.hidden {
-    display: none;
 }

@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Autocomplete</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="search-field">
-        <label><span class="search-form__name">Город</span>
-        <input class="search-form" type="text" placeholder="Начните вводить название"/></label>
+    <form class="search-form">
+        <label class="search-form__label" for="city">Город</label>
+        <div class="search-form__field">
+            <input class="search-form__input" name="city" placeholder="Начните вводить название">
+            <div class="search-form__popup search-form__popup_hidden"></div>
+        </div>
     </form>
-    <div class="cities hidden">
-    </div>
-
     <script src="kladr.js"></script>
     <script src="script.js"></script>
 </body>
