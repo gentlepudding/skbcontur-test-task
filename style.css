@@ -1,0 +1,98 @@
+body {
+    font: 14px 'Segoe UI', sans-serif;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+}
+
+.search-field {
+    margin: 10px;
+    line-height: 20px;
+}
+
+.search-form {
+    width: 290px;
+    height: 30px;
+    display: inline-block;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.1) rgba(0,0,0,0.1);
+    border-image: none;
+    padding: 5px;
+    background: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.search-form__name {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.search-form:hover {
+     border-color:  rgba(0,0,0,0.3) rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.1);
+}
+
+.search-form:focus {
+    outline: none;
+    border: 1px solid #5199db;
+}
+
+.search-form:valid {
+    border: rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.1) rgba(0,0,0,0.1);
+}
+
+.search-form:invalid {
+    outline: none;
+    border: 2px solid #da0c09;
+}
+
+.search-form:disabled {
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.1);
+    background-color: #f1f1f1;
+}
+
+.search-form:focus::-webkit-input-placeholder {
+       color: rgba(64, 64, 64, 0.5);
+}
+
+/*:focus::-webkit-input-placeholder {color: rgba(64, 64, 64, 0.5)}
+:focus::-moz-placeholder          {color: rgba(64, 64, 64, 0.5)}
+:focus:-moz-placeholder           {color: rgba(64, 64, 64, 0.5)}
+:focus:-ms-input-placeholder      {color: rgba(64, 64, 64, 0.5)}*/
+
+.cities {
+    position: absolute;
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+    top: 29px;
+    left: 69px;
+}
+
+.cities-list {
+    padding: 0;
+    font: 14px 'Segoe UI', sans-serif;
+    color: #404040;
+    list-style: none;
+    line-height: 20px;
+    background: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.2) rgba(0,0,0,0.2);
+    border-image: none;
+    box-shadow: 0px 1px 15px 0 rgba(0,0,0,0.2);
+}
+
+.cities-list__string {
+     padding: 3px 5px;
+}
+
+.cities-list__string:hover {
+    color: #fff;
+    background-color: #5199db;
+}
+
+.hidden {
+    display: none;
+}
